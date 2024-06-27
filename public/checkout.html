@@ -95,48 +95,100 @@
         </div>
     </nav>
 
-    <div class="container py-16">
-        <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
-            <p class="text-gray-600 mb-6 text-sm">
-                Login if you are a returing customer
-            </p>
-            <form action="">
-                <div class="space-y-4">
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Email address</label>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder:text-gray-400" placeholder="Enter your Email address">
-                    </div>
-                    <div>
-                        <label class="text-gray-600 mb-2 block">Password</label>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder:text-gray-400" placeholder="Enter your Email Password">
-                    </div>
-                </div>
-                <div class="flex items-center justify-between mt-6">
-                    <div class="flex items-center">
-                        <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
-                        <label for="agreement" class="text-gray-600 ml-3 cursor-pointer">Remember me</label>
-                    </div>
-                    <a href="#" class="text-primary">Forget password</a>
-                </div>
-                <div class="mt-4">
-                    <button type="submit" class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
-                        Login
-                    </button>
-                </div>
-            </form>
+    <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Checkout</p>
+    </div>
 
-            <div class="mt-6 flex justify-center relative">
-                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative">Or login with</div>
-                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+    <div class="container grid grid-cols-12 items-start pb-16 pt-4 gap-4">
+        <div class="col-span-8 border border-gray-200 p-4 rounded">
+            <h3 class="text-lg font-medium capitalize mb-4">Checkout</h3>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-gray-600 mb-2 block">First Name <span class="text-primary">*</span></label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div>
+                        <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                        <input type="text" class="input-box">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+                <div>
+                    <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+                <div>
+                    <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+                <div>
+                    <label class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
             </div>
-            <div class="flex mt-4 gap-4">
-                <a href="" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto font-medium text-sm hover:bg-blue-700">Facebook</a>
-                <a href="" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto font-medium text-sm hover:bg-yellow-500">Google</a>
+        </div>
+
+        <div class="col-span-4 border border-gray-200 p-4 rounded">
+            <h4 class="text-gray-800 text-lg mb-4 font-medium uppercase">Order summary</h4>
+            <div class="space-y-2">
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italian Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">320</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italian Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">320</p>
+                </div>
+                <div class="flex justify-between">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">Italian Shape Sofa</h5>
+                        <p class="text-sm text-gray-600">Size: M</p>
+                    </div>
+                    <p class="text-gray-600">
+                        x3
+                    </p>
+                    <p class="text-gray-800 font-medium">320</p>
+                </div>
             </div>
-            <p class="mt-4 text-gray-600 text-center">
-                Don't have an account ? <a href="register.html" class="text-primary">Register now</a>
-            </p>
+            <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                <p>Subtotal</p>
+                <p>$320</p>
+            </div>
+            <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                <p>Shipping</p>
+                <p>$320</p>
+            </div>
+            <div class="flex justify-between text-gray-800 font-medium py-3 uppercase">
+                <p class="font-semibold">Total</p>
+                <p>$320</p>
+            </div>
+            <div class="flex items-center mb-4 mt-2">
+                <input id="agreement" type="checkbox" class="text-primary focus:ring-0 rounded-sm cursor-pointer w-3 h-3">
+                <label for="agreement" class="text-gray-600 ml-3 cursor-pointer text-sm">Agree to our <a class="text-primary" href="#">terms & conditions</a></label>
+            </div>
+            <a href="#" class="w- block px-6 py-2 text-center text-sm text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">Add to cart</a>
         </div>
     </div>
 
